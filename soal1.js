@@ -1,22 +1,24 @@
 // Jumlahkan semua angka genap dalam array berikut
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-let resultOne;
+let resultOne = 0;
 
 // ANSWER 1
 for (let index = 0; index < numbers.length; index++) {
-  resultOne = numbers[index] + (resultOne || 0);
+  if (numbers[index] % 2 === 0) {
+    resultOne += numbers[index];
+  }
 }
 
 console.log("ANSWER 1: ", resultOne);
 
 const numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8];
 //Tambahkan semua angka ganjil dalam array dan kembalikan hasilnya.
-let resultTwo;
+let resultTwo = 0;
 
 // ANSWER 2
 for (let index = 0; index < numbersTwo.length; index++) {
   if (numbersTwo[index] % 2 !== 0) {
-    resultTwo = numbersTwo[index] + (resultTwo || 0);
+    resultTwo += numbersTwo[index];
   }
 }
 
