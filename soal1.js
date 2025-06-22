@@ -33,7 +33,14 @@ resultThree = students.map((student) => {
   return student.toUpperCase();
 });
 
+// ANSWER 3 DENGAN FOR LOOP
+let resultThreeForLoop = [];
+for (let index = 0; index < students.length; index++) {
+  resultThreeForLoop.push(students[index].toUpperCase());
+}
+
 console.log("ANSWER 3: ", resultThree);
+console.log("ANSWER 3 WITH FOR LOOP: ", resultThreeForLoop);
 
 // Ambil hanya nama-nama orang yang umurnya di atas 18 tahun.
 // Ambil hanya orang yang panjang namanya lebih dari 5
@@ -75,7 +82,7 @@ console.log("ANSWER 5: ", resultFive);
 const numbersThree = [1, 2, 2, 3, 4, 4, 5];
 
 // ANSWER 6
-let resultSix = [];
+let resultSix = []; // 1, 2
 
 for (let index = 0; index < numbersThree.length; index++) {
   if (resultSix.includes(numbersThree[index]) === false) {
@@ -116,7 +123,7 @@ const names = ["Aldo", "Budi", "Caca", "Dinda", "Eka", "Fajar"];
 // ANSWER 9
 let answerNine = [];
 for (let index = 0; index < names.length; index++) {
-  const lowerCaseName = names[index].toLocaleLowerCase();
+  const lowerCaseName = names[index].toLowerCase();
 
   if (lowerCaseName.includes("a") && answerNine.length < 3) {
     answerNine.push(names[index]);
