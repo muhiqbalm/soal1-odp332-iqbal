@@ -87,6 +87,8 @@ function loopCheckOddEven(inputNumber) {
     for (let index = 1; index <= inputNumber; index++) {
       if (index % 2 !== 0) {
         console.log(`${index} => Bilangan Ganjil`);
+      } else {
+        console.log(`${index} => Bilangan Genap`);
       }
     }
   }
